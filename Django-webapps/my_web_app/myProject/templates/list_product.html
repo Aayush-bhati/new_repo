@@ -1,0 +1,15 @@
+<div style ="background-color: azure;color: brown;">
+    {% for data in dataset %}
+    <label>Product ID : </label>
+    {{ data.id }}
+    <br> <br>
+      <label>Product Name : </label>
+      {{ data.name }}
+      <br /> <br />
+      <label>Product Price :</label>
+      {{ data.price }}
+      <hr />
+    
+    {% endfor %}
+
+</div>

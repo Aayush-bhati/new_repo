@@ -1,0 +1,21 @@
+<div style="background-color: olive;color: white;">
+    <h2> Listing Tasks</h2>
+    {% for data in dataset %}
+    <label> Task ID : </label>
+    {{ data.id}}
+    <br /> <br />
+    <label>Task Title : </label>
+    {{data.title}}
+    <br /> <br />
+    <label> Description :</label>
+    {{data.description}}
+    <br /> <br />
+    <label> Task Done :</label>
+    {{data.completed}}
+    <br /> <br />
+    <label> Creation Time :</label>
+    {{data.created_at}}
+   <hr>
+   {% endfor %}
+
+</div>

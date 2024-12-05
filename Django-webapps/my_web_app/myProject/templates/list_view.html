@@ -1,0 +1,18 @@
+<div style="background-color: olive;color: white;">
+    {% for data in dataset %}
+    <label> Employee ID : </label>
+    
+    {{ data.id }}
+    <br /> <br />
+       <label>Employee name :</label>
+            {{ data.emp_name }}
+        <br /> <br />
+
+        <label> Employee Feedback : </label>
+
+            {{ data.emp_feedback }}
+        <hr />
+   
+    
+    {% endfor %}
+</div>
