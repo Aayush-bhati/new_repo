@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from tasks.models import Tasks
+from tasks.models import Tasks,State
 
 class TaskSerializer(serializers.ModelSerializer):
     class Meta:
@@ -9,4 +9,11 @@ class TaskSerializer(serializers.ModelSerializer):
             'title',
             'description'
             )
-        
+
+class StateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = State
+        fields =(
+            'id',
+            'name'
+        )

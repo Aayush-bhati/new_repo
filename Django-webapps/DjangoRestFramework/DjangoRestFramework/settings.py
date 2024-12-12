@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',  # add by me
     'tasks.apps.TasksConfig', # add by me
     'corsheaders',     # add by me
-
+     
 ]
 
 MIDDLEWARE = [
